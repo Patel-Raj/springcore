@@ -1,10 +1,12 @@
+package com.springcore;
+
 public class Student {
-    private int sutdentId;
+    private int studentId;
     private String studentName;
     private String studentAddress;
 
-    public Student(int sutdentId, String studentName, String studentAddress) {
-        this.sutdentId = sutdentId;
+    public Student(int studentId, String studentName, String studentAddress) {
+        this.studentId = studentId;
         this.studentName = studentName;
         this.studentAddress = studentAddress;
     }
@@ -13,12 +15,12 @@ public class Student {
         super();
     }
 
-    public int getSutdentId() {
-        return sutdentId;
+    public int getStudentId() {
+        return studentId;
     }
 
-    public void setSutdentId(int sutdentId) {
-        this.sutdentId = sutdentId;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     public String getStudentName() {
@@ -40,7 +42,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "sutdentId=" + sutdentId +
+                "studentId=" + studentId +
                 ", studentName='" + studentName + '\'' +
                 ", studentAddress='" + studentAddress + '\'' +
                 '}';
