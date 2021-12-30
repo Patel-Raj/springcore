@@ -5,14 +5,14 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="com.springcore.Student" name="student1">
-        <property name="studentId">
-            <value>1</value>
-        </property>
-        <property name="studentName">
-            <value>Raj</value>
-        </property>
-        <property name="studentAddress">
-            <value>India</value>
-        </property>
+        <property name="studentId" value="1"/>
+        <property name="studentName" value="Raj"/>
+        <property name="studentAddress" value="India"/>
+    </bean>
+
+    <bean class="com.springcore.Student" name="student2">
+        <property name="studentId" value="2"/>
+        <property name="studentName" value="Mahesh"/>
+        <property name="studentAddress" value="USA"/>
     </bean>
 </beans>
