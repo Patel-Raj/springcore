@@ -92,4 +92,8 @@
         <constructor-arg value="2" type="int" index="1"/>
     </bean>
 
+    <bean class="com.springcore.Car" name="car1" init-method="init" destroy-method="destroy">
+        <property name="model" value="10"/>
+    </bean>
+
 </beans>
