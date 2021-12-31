@@ -25,5 +25,8 @@ public class App {
         Person person1 = (Person) applicationContext.getBean("person1");
         System.out.println(person1);
 
+        Addition addition = (Addition) applicationContext.getBean("add1");
+        System.out.println(addition);
+
     }
 }

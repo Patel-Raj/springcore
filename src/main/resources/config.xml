@@ -87,4 +87,9 @@
         </constructor-arg>
     </bean>
 
+    <bean class="com.springcore.Addition" name="add1">
+        <constructor-arg value="1" type="int" index="0"/>
+        <constructor-arg value="2" type="int" index="1"/>
+    </bean>
+
 </beans>
