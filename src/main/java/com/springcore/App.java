@@ -18,5 +18,8 @@ public class App {
 
         Employee employee1 = (Employee) applicationContext.getBean("employee1");
         System.out.println(employee1);
+
+        Line line1 = (Line) applicationContext.getBean("line1");
+        System.out.println(line1);
     }
 }
