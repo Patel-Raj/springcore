@@ -15,4 +15,42 @@
         <property name="studentName" value="Mahesh"/>
         <property name="studentAddress" value="USA"/>
     </bean>
+
+    <bean class="com.springcore.Employee" name="employee1">
+        <property name="employeeId" value="1"/>
+        
+        <property name="employeeAddresses">
+            <list>
+                <value>Gujarat</value>
+                <value>Delhi</value>
+                <value>Mumbai</value>
+                <value>Karnataka</value>
+            </list>
+        </property>
+
+        <property name="employeePhones">
+            <set>
+                <value>12</value>
+                <value>1234</value>
+                <value>21</value>
+                <value>323</value>
+            </set>
+        </property>
+
+        <property name="employeeCourses">
+            <map>
+                <entry key="Java" value="10"/>
+                <entry key="Spring Framework" value="9"/>
+                <entry key="Spring Boot" value="5"/>
+            </map>
+        </property>
+
+        <property name="employeeProperties">
+            <props>
+                <prop key="Age">25</prop>
+                <prop key="height">5.10</prop>
+            </props>
+        </property>
+
+    </bean>
 </beans>
