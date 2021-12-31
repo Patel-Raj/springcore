@@ -21,5 +21,9 @@ public class App {
 
         Line line1 = (Line) applicationContext.getBean("line1");
         System.out.println(line1);
+
+        Person person1 = (Person) applicationContext.getBean("person1");
+        System.out.println(person1);
+
     }
 }
