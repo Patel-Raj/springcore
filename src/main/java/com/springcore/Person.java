@@ -5,22 +5,18 @@ import java.util.List;
 
 public class Person {
     private int personId;
-    private List<String> favoriteColors;
-    private Certificate personCertificate;
+    private List<Certificate> certificates;
+
+    public Person(int personId, List<Certificate> certificates) {
+        this.personId = personId;
+        this.certificates = certificates;
+    }
 
     @Override
     public String toString() {
         return "Person{" +
                 "personId=" + personId +
-                ", favoriteColors=" + favoriteColors +
-                ", personCertificate=" + personCertificate +
+                ", certificates=" + certificates +
                 '}';
     }
-
-    public Person(int personId, List<String> favoriteColors, Certificate personCertificate) {
-        this.personId = personId;
-        this.favoriteColors = favoriteColors;
-        this.personCertificate = personCertificate;
-    }
-
 }

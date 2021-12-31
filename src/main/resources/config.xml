@@ -73,16 +73,18 @@
         <constructor-arg value="Spring Boot" />
     </bean>
 
+    <bean class="com.springcore.Certificate" name="certi2">
+        <constructor-arg value="Spring Core" />
+    </bean>
+
     <bean class="com.springcore.Person" name="person1">
         <constructor-arg value="1" type="int"/>
         <constructor-arg type="List">
             <list>
-                <value>Red</value>
-                <value>Green</value>
-                <value>Blue</value>
+                <ref bean="certi1" />
+                <ref bean="certi2" />
             </list>
         </constructor-arg>
-        <constructor-arg ref="certi1" type="com.springcore.Certificate"/>
     </bean>
 
 </beans>
