@@ -39,5 +39,7 @@ public class App {
         House house = (House) applicationContext.getBean("house1");
         System.out.println(house);
 
+        Animal animal = (Animal) applicationContext.getBean("animal1");
+        System.out.println(animal);
     }
 }
