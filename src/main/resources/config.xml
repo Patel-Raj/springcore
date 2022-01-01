@@ -96,4 +96,8 @@
         <property name="model" value="10"/>
     </bean>
 
+    <bean class="com.springcore.House" name="house1">
+        <property name="price" value="1000"/>
+    </bean>
+
 </beans>

@@ -36,5 +36,8 @@ public class App {
         Car car = (Car) applicationContext.getBean("car1");
         System.out.println(car);
 
+        House house = (House) applicationContext.getBean("house1");
+        System.out.println(house);
+
     }
 }
