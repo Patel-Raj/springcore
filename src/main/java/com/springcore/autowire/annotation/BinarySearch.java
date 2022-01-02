@@ -1,6 +1,7 @@
 package com.springcore.autowire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class BinarySearch {
 
@@ -28,6 +29,7 @@ public class BinarySearch {
     }
 
     @Autowired
+    @Qualifier("mergeSort1")
     public void setMergeSort(MergeSort mergeSort) {
         this.mergeSort = mergeSort;
     }
