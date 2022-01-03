@@ -17,6 +17,17 @@ public class Book {
     @Value("#{lang}")
     private List<String> languages;
 
+    @Value("#{ T(java.lang.Math).PI }")
+    private double PI;
+
+    public double getPI() {
+        return PI;
+    }
+
+    public void setPI(double PI) {
+        this.PI = PI;
+    }
+
     public List<String> getLanguages() {
         return languages;
     }
@@ -30,6 +41,7 @@ public class Book {
         return "Book{" +
                 "name='" + name + '\'' +
                 ", languages=" + languages +
+                ", PI=" + PI +
                 '}';
     }
 
