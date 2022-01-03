@@ -13,4 +13,8 @@ http://www.springframework.org/schema/util/spring-util.xsd">
     <context:component-scan base-package="com.springcore.stereotype"/>
 
 
+    <util:list list-class="java.util.Vector" id ="lang">
+        <value>English</value>
+        <value>Hindi</value>
+    </util:list>
 </beans>
