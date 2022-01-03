@@ -15,6 +15,10 @@ public class StereotpeApp {
         //applicationContext.registerShutdownHook();
 
         Book bs = (Book) applicationContext.getBean("bk");
+        bs.setName("Modified Atomic Habits");
+        Book bs1 = (Book) applicationContext.getBean("bk");
+
         System.out.println(bs);
+        System.out.println(bs1);
     }
 }

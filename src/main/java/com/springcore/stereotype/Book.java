@@ -2,11 +2,13 @@ package com.springcore.stereotype;
 
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component("bk")
+@Scope("prototype")
 public class Book {
 
     @Value("Atomic Habits")
